@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div id="modal-sections" uk-modal="">
+      <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close=""></button>
+        <form class="uk-padding">
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваше имя">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваш телефон">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Email">
+          </div>
+          <button class="k-button uk-button-primary">Отправить </button>
+        </form>
+      </div>
+    </div>
+    <div class="uk-container">
+      <section class="video-inner">
+        <h2 class="heading">В Бишкеке проходит выставка-ярмарка органической продукции</h2>
+        <div class="video-wrapper">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+        <div class="article-wrapper">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita maiores id dolor aliquid similique rem qui cumque! Nobis repellat, minus qui molestiae molestias officia assumenda id inventore adipisci architecto at iure totam in nesciunt! Harum, delectus perspiciatis quasi laborum sed amet commodi ea, aliquid exercitationem ullam, architecto earum et! Atque provident sint possimus aliquid! Dolore ut sequi accusamus. Nihil natus tenetur molestiae architecto recusandae odit fuga ut saepe aut commodi minima quos accusantium cum, dolores itaque debitis optio nulla magni est id vel quis ea. Assumenda consequuntur ab ad vitae eos illo vel? Itaque quam rem inventore iure, ad possimus?</p>
+        </div>
+      </section>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div id="modal-sections" uk-modal="">
+      <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close=""></button>
+        <form class="uk-padding">
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваше имя">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваш телефон">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Email">
+          </div>
+          <button class="k-button uk-button-primary">Отправить </button>
+        </form>
+      </div>
+    </div>
+    <div class="uk-container">
+      <section class="projects">
+        <h2 class="heading">ПРОЕКТЫ BIO-KG</h2>
+        <p class="uk-width-1-1 uk-width-1-2@m">С 2012 года ФОД "BIO-KG" реализует уже несколько проектов по продвижению органического сельского хозяйства в Кыргызской Республике</p>
+        <div class="uk-grid uk-child-width-1-1 pro-grid uk-child-width-1-4@l uk-child-width-1-2@m">
+          <div>
+            <div class="project-item">
+              <div class="uk-cover-container"><img src="{% static 'img/jpg/veg.jpg' %}" alt="" uk-cover>
+                <div class="text">
+                  <h3>Международный Органический Форум, Бишкек-2014</h3>
+                  <p>Международный Органический Форум, Бишкек-2014 Проект: Международный органический Фору...</p><a class="more" href="">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="project-item">
+              <div class="uk-cover-container"><img src="{% static 'img/jpg/veg.jpg' %}" alt="" uk-cover>
+                <div class="text">
+                  <h3>Международный Органический Форум, Бишкек-2014</h3>
+                  <p>Международный Органический Форум, Бишкек-2014 Проект: Международный органический Фору...</p><a class="more" href="">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="project-item">
+              <div class="uk-cover-container"><img src="{% static 'img/jpg/veg.jpg' %}" alt="" uk-cover>
+                <div class="text">
+                  <h3>Международный Органический Форум, Бишкек-2014</h3>
+                  <p>Международный Органический Форум, Бишкек-2014 Проект: Международный органический Фору...</p><a class="more" href="">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="project-item">
+              <div class="uk-cover-container"><img src="{% static 'img/jpg/veg.jpg' %}" alt="" uk-cover>
+                <div class="text">
+                  <h3>Международный Органический Форум, Бишкек-2014</h3>
+                  <p>Международный Органический Форум, Бишкек-2014 Проект: Международный органический Фору...</p><a class="more" href="">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="uk-pagination" uk-margin="">
+          <li><a href="#"><span uk-pagination-previous=""></span></a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4<span uk-pagination-next=""></span></a></li>
+        </ul>
+      </section>
+    </div>
+
+{% endblock %}

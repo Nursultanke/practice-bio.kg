@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div id="modal-sections" uk-modal="">
+      <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close=""></button>
+        <form class="uk-padding">
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваше имя">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваш телефон">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Email">
+          </div>
+          <button class="k-button uk-button-primary">Отправить </button>
+        </form>
+      </div>
+    </div>
+    <div class="uk-container">
+      <section class="contact">
+        <h2 class="heading">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+        <p class="uk-width-1-1 uk-width-1-2@m">Это эффективный путь для сохранения уникальной природы нашей страны и обеспечения ее населения здоровым органическим продовольствием. Это эффективный путь для сохранения уникальной природы.</p>
+        <div class="uk-grid uk-child-width-1-1 uk-grid-small contact-grid uk-child-width-1-4@l uk-child-width-1-2@m">
+          <div class="item"><span uk-icon="home"></span>
+            <div class="text">
+              <h5>Адрес  </h5>
+              <p>г. Бишкек ул. Гражданская 43/1</p>
+            </div>
+          </div>
+          <div class="item"><span uk-icon="clock"></span>
+            <div class="text">
+              <h5>Адрес  </h5>
+              <p>г. Бишкек ул. Гражданская 43/1</p>
+            </div>
+          </div>
+          <div class="item"><span uk-icon="receiver"></span>
+            <div class="text">
+              <h5>Адрес  </h5>
+              <p>г. Бишкек ул. Гражданская 43/1</p>
+            </div>
+          </div>
+          <div class="item"><span uk-icon="mail"></span>
+            <div class="text">
+              <h5>Адрес  </h5>
+              <p>г. Бишкек ул. Гражданская 43/1</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+{% endblock %}

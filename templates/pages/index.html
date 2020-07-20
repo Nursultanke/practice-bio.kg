@@ -47,38 +47,16 @@
         </div>
         <div class="numbers-wrapper">
             <div class="uk-grid uk-child-width-1-1 uk-grid-small uk-child-width-1-4@l uk-child-width-1-2@s">
-                <div>
-                    <div class="number-item">
-                        <h4>22 села</h4>
-                        <h5>в "Органических аймаках"</h5>
-                        <p>в настоящий момент "лечат" свои земли от многолетнего воздействия химикатами и
-                            пестицидами</p>
+                {% for statistic in statistics %}
+                    <div>
+                        <div class="number-item">
+                            <h4>{{ statistic.number }}</h4>
+                            <h5>{{ statistic.places }}</h5>
+                            <p>{{ statistic.issues }}</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="number-item">
-                        <h4>22 села</h4>
-                        <h5>в "Органических аймаках"</h5>
-                        <p>в настоящий момент "лечат" свои земли от многолетнего воздействия химикатами и
-                            пестицидами</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="number-item">
-                        <h4>22 села</h4>
-                        <h5>в "Органических аймаках"</h5>
-                        <p>в настоящий момент "лечат" свои земли от многолетнего воздействия химикатами и
-                            пестицидами</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="number-item">
-                        <h4>22 села</h4>
-                        <h5>в "Органических аймаках"</h5>
-                        <p>в настоящий момент "лечат" свои земли от многолетнего воздействия химикатами и
-                            пестицидами</p>
-                    </div>
-                </div>
+                {% endfor %}
+
             </div>
         </div>
         <div class="project-wrapper">
@@ -184,4 +162,5 @@
         </div>
         </div>
     </section>
+
 {% endblock %}

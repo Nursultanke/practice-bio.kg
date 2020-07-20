@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div id="modal-sections" uk-modal="">
+      <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close=""></button>
+        <form class="uk-padding">
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваше имя">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваш телефон">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Email">
+          </div>
+          <button class="k-button uk-button-primary">Отправить </button>
+        </form>
+      </div>
+    </div>
+    <div class="uk-container">
+      <section class="gallery">
+        <h2 class="heading">ГАЛЕРЕЯ BIO-KG</h2>
+        <p class="uk-width-1-1 uk-width-1-2@m">В этом разделе отражены фотоотчеты с основных мероприятий, проводимых в процессе работы по развитию ОСХ в Кыргызстане и повышению осведомленности об ОСХ среди граждан</p>
+        <div class="uk-grid uk-child-width-1-1 gal-grid uk-child-width-1-6@l uk-child-width-1-3@m">
+          <div>
+            <div class="item"><a href="">Органический форум 2013</a></div>
+          </div>
+          <div>
+            <div class="item"><a href="">Международный Органический Форум, Бишкек-2014</a></div>
+          </div>
+        </div>
+        <div class="uk-child-width-1-4@l uk-child-width-1-2@m uk-child-width-1-1 slider" uk-grid="" uk-lightbox="animation: slide">
+          <div><a class="uk-inline" href="{% static 'img/jpg/veg.jpg' %}" data-caption="Caption 1"><img src="{% static 'img/jpg/veg.jpg' %}" alt=""></a></div>
+          <div><a class="uk-inline" href="{% static 'img/jpg/veg.jpg' %}" data-caption="Caption 2"><img src="{% static 'img/jpg/veg.jpg' %}" alt=""></a></div>
+          <div><a class="uk-inline" href="{% static 'img/jpg/veg.jpg' %}" data-caption="Caption 3"><img src="{% static 'img/jpg/veg.jpg' %}" alt=""></a></div>
+        </div>
+        <ul class="uk-pagination" uk-margin="">
+          <li><a href="#"><span uk-pagination-previous=""></span></a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4<span uk-pagination-next=""></span></a></li>
+        </ul>
+      </section>
+    </div>
+
+{% endblock %}

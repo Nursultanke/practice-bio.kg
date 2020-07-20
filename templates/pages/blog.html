@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div id="modal-sections" uk-modal="">
+      <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close=""></button>
+        <form class="uk-padding">
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваше имя">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваш телефон">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Email">
+          </div>
+          <button class="k-button uk-button-primary">Отправить </button>
+        </form>
+      </div>
+    </div>
+    <div class="uk-container">
+      <section class="blog-inner">
+        <h2 class="heading">Блог</h2>
+        <p class="uk-width-1-1 uk-width-1-2@m">Блог Фонда</p>
+        <div class="uk-grid uk-child-width-1-1 uk-grid-small video-grid uk-child-width-1-3@m">
+          <div><a class="item" href="{% url 'blog_inner' %}">
+              <div class="uk-cover-container"><img src="{% static 'img/jpg/veg.jpg' %}" alt="" uk-cover></div>
+              <h3>В Бишкеке проходит выставка-ярмарка органической продукции</h3>
+              <p>С 14 по 16 октября в сквере возле Кыргызского национального аграрного университета пройдет выставка-ярмарка натуральной и органической продукции. На ней представят напитки, приготовленные по древним рецептам, мед, мясо-молочную продукцию и оригинальные ремесленные изделия.</p></a></div>
+        </div>
+      </section>
+    </div>
+
+{% endblock %}

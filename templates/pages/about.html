@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div id="modal-sections" uk-modal="">
+      <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close=""></button>
+        <form class="uk-padding">
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваше имя">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Ваш телефон">
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Email">
+          </div>
+          <button class="k-button uk-button-primary">Отправить </button>
+        </form>
+      </div>
+    </div>
+    <div class="uk-container">
+      <section class="about">
+        <h2 class="heading uk-text-center">О ФОНДЕ "BIO-KG"</h2>
+        <p>В 2012 году в Республике была основана Национальная «зонтичная» организация - Федерация органического движения «BIO-KG»</p>
+        <div class="uk-grid uk-child-width-1-1 uk-grid-small uk-child-width-1-2@m">
+          <div class="uk-text-center"><img src="{% static 'img/png/big-logo.png' %}" alt=""></div>
+          <div>
+            <h3>О ФОНДЕ BIO-KG</h3>
+            <p>Миссия: Руководство совместными усилиями в целях восстановления активности и поддержки развитию Органического движения в Кыргызской Республике и продвижения принципов ОСХ (здоровье, экология, честность, забота), как основы формирования устойчивой аграрной политики страны. Видение: Создана и действует система производства органической сельскохозяйственной продукции в Кыргызской Республике, как основы для продовольственной и пищевой безопасности страны, сохранения культурного наследия и развития экосистем. С 2012 года возглавляет экс-министр сельского хозяйства Кыргызской Республики Искендер Рысбекович Айдаралиев.</p>
+            <h4>Разработка Закона "Об органическом сельском хозяйстве КР"</h4>
+            <h4>Национальный План Действий Органического сельского хозяйства и производства</h4>
+            <h4>Работа с "органическими аймаками"</h4>
+          </div>
+        </div>
+      </section>
+    </div>
+
+{% endblock %}

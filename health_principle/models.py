@@ -15,3 +15,14 @@ class HealthPrinciple(models.Model):
         return self.title
 
 
+class Statistic(models.Model):
+    number = models.CharField(max_length=50, verbose_name="Число сел или городов")
+    places = models.CharField(max_length=150, verbose_name="Где")
+    issues = models.TextField(verbose_name="Что произошло?")
+
+    class Meta:
+        verbose_name = _("Стадистика выполняемых работ")
+        verbose_name_plural = _("Список статистики")
+
+    def __str__(self):
+        return self.places
