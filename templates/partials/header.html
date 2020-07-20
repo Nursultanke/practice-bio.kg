@@ -1,0 +1,76 @@
+{% load static %}
+<header>
+      <div class="top-line">
+        <div class="uk-navbar-container">
+          <div class="uk-container">
+            <div class="uk-navbar">
+              <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                  <li><a class="logo" href="{% url 'index' %}"><img src="{% static 'img/png/logo.png' %}" alt=""></a></li>
+                </ul>
+              </div>
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                  <li><a class="phone-number" href=""><i uk-icon="receiver"></i><span>+996 312 36 55 71</span></a></li>
+                  <li class="uk-flex uk-flex-middle"><a class="phone-order" href="#modal-sections" uk-toggle="">Заказать звонок</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middle uk-container">
+        <h1>Федерация органического движения "BIO-KG"</h1>
+        <h3>Развитие органического сельского хозяйства в Кыргызской Республике</h3>
+      </div>
+      <div class="bottom">
+        <nav class="uk-navbar-container uk-visible@m">
+          <div class="uk-container">
+            <div class="uk-navbar-center uk-flex-center">
+              <ul class="uk-navbar-nav">
+                <li><a href="{% url 'news' %}">Новости</a></li>
+                <li><a href="">О фонде</a></li>
+                <li><a href="">Галерея</a></li>
+                <li><a href="">Проекты</a></li>
+                <li><a href="">Отзывы</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Видео</a></li>
+                <li><a href="">Блог              </a></li>
+              </ul>
+              <div class="uk-position-relative"><a class="uk-navbar-toggle search-icon" href="#" uk-search-icon=""></a>
+                <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid="">
+                    <div class="uk-width-expand">
+                      <form class="uk-search uk-search-navbar uk-width-1-1">
+                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                      </form>
+                    </div>
+                    <div class="uk-width-auto"><a class="uk-navbar-dropdown-close" href="#" uk-close=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="mob-nav uk-hidden@m">
+          <div class="uk-container">
+            <nav class="uk-navbar uk-navbar-container uk-margin">
+              <div class="uk-navbar-right"><a href="#" uk-navbar-toggle-icon=""></a>
+                <div uk-dropdown="&quot;pos: bottom-center; mode: click">
+                  <ul class="uk-nav uk-dropdown-nav">
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">О фонде</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Видео</a></li>
+                    <li><a href="#">Блог</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
